@@ -5,9 +5,10 @@ smsaeroapi
 
 Использование класса:
 
-$sms = new Smsaero('test@local.ru', 'password', 'PROVERKA');
+    $sms = new Smsaero('test@local.ru', 'password', 'PROVERKA');
+    
+    echo $sms->send(
+        '79001234567',
+        'Сообщение с тремя пробелами'
+    );
 
-echo $sms->send(
-    '79001234567',
-    'Сообщение с тремя пробелами'
-);
