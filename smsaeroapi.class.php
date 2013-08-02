@@ -60,8 +60,6 @@ class Smsaero {
     {
         if(is_null($from))
             $from=$this->from;
-        if(is_null($date))
-            $date=time()+100;
         
         $response = $this->send_post(
             "/send/",
